@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cardId"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="#00B5A4">
+
+        <ImageView
+            android:id="@+id/imageFromCard"
+            android:layout_width="99dp"
+            android:layout_height="96dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.054"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/employeeName"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toStartOf="@id/buttonDelete"
+            app:layout_constraintStart_toEndOf="@id/imageFromCard"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Employee Name" />
+
+        <TextView
+            android:id="@+id/employeeSkill"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toStartOf="@id/buttonDelete"
+            app:layout_constraintStart_toEndOf="@id/imageFromCard"
+            app:layout_constraintTop_toBottomOf="@id/employeeName"
+            tools:text="Employee Skill" />
+
+        <TextView
+            android:id="@+id/employeeRole"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toStartOf="@id/buttonDelete"
+            app:layout_constraintStart_toEndOf="@id/imageFromCard"
+            app:layout_constraintTop_toBottomOf="@id/employeeSkill"
+            tools:text="Employee Role" />
+
+        <TextView
+            android:id="@+id/employeeNumber"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:layout_constraintEnd_toStartOf="@id/buttonDelete"
+            app:layout_constraintStart_toEndOf="@id/imageFromCard"
+            app:layout_constraintTop_toBottomOf="@id/employeeRole"
+            tools:text="Employee Number" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/buttonDelete"
+            android:layout_width="67dp"
+            android:layout_height="70dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.954"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_delete" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
